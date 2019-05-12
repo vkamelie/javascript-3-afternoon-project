@@ -10,20 +10,18 @@
 
 // Do not edit the code below.
 var carDetails = {
-  color: 'red',
-  make: 'toyota',
-  model: 'tacoma',
+  color: "red",
+  make: "toyota",
+  model: "tacoma",
   year: 1994
-}
+};
 // Do not edit the code above.
 
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
-
-
+let { color, make, model, year } = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -33,15 +31,13 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  //Code Here
-  
-  // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+function greeting(obj) {
+  var { firstName, lastName, title } = obj;
+
+  // Do not edit the code below
+  return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -53,9 +49,10 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
-
-
+let totalPopulation = function(obj) {
+  let { utah, california, texas, arizona } = obj;
+  return utah + california + texas + arizona;
+};
 
 ////////// PROBLEM 4 //////////
 
@@ -66,10 +63,6 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables. 
   Push these new variables to an array and return the array. 
 */
-
-//Code Here
-
-
 
 ////////// PROBLEM 5 //////////
 
@@ -85,9 +78,9 @@ function greeting( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
-
-
+// var largeNumbers = function({first, second, third}){
+//   if()
+// }
 
 ////////// PROBLEM 6 //////////
 
@@ -97,6 +90,4 @@ function greeting( obj ) {
   Find the longest array and return that array.
 */
 
-//Code Here
-
-
+var numberGroups = function({ a, b, c }) {};

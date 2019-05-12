@@ -50,11 +50,17 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+var employeeUpdater = function (){
+  for(i = 0; i < employees.length; i++){
+    if(employees.firstName == 'Theo')
+   delete 
+  } if(employees.firstName == 'Lorie'){
+   employees.firstName = "HR"
+  }
+  return employees
+}
 
-
-
-////////// PROBLEM 2 //////////
+//PROBLEM 2 //////////
 
 // Do not edit the code below.
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
